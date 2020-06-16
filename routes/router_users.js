@@ -1,6 +1,8 @@
 
 const router_users = require('express').Router();
-const { users } = require('../db.js');
+const { fetchUsers } = require('../helpers/getData');
+const url = './data/users.json';
+
 
 router_users.use(function timeLog(req, res, next) {
   console.log('Вызвали рутер router_users');
@@ -8,7 +10,13 @@ router_users.use(function timeLog(req, res, next) {
 });
 
 router_users.get('/', (req, res) => {
-  res.send(users);
+  fetchUsers(url)
+    .then((users) => {
+      res.send(users);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
 });
 
 module.exports = router_users;
