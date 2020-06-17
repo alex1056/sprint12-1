@@ -2,14 +2,16 @@ const fsPromises = require('fs').promises;
 
 async function readFile(pathToFile) {
   try {
-    let stringData = await fsPromises.readFile(pathToFile, { encoding: 'utf8' });
-    let objData = await JSON.parse(stringData);
+    const stringData = await fsPromises.readFile(pathToFile, {
+      encoding: 'utf8',
+    });
+    const objData = await JSON.parse(stringData);
     return objData;
-  }
-  catch (error) {
+  } catch (error) {
     console.log(error);
+    return error;
   }
 }
 module.exports = {
-  readFile
+  readFile,
 };

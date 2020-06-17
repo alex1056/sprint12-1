@@ -1,25 +1,24 @@
-
+/* eslint-disable import/no-dynamic-require */
 const express = require('express');
+
 const app = express();
 const path = require('path');
-//const router_users = require('./routes/router_users.js');
-const router_users = require(path.join(__dirname, 'routes/router_users.js'));
-const router_cards = require(path.join(__dirname, 'routes/router_cards.js'));
-const router_user_id = require(path.join(__dirname, 'routes/router_user-id.js'));
-const router_err = require(path.join(__dirname, 'routes/router_err.js'));
+
+const routerUsers = require(path.join(__dirname, 'routes/router-users.js'));
+const routerCards = require(path.join(__dirname, 'routes/router-cards.js'));
+const routerUserId = require(path.join(__dirname, 'routes/router-user-id.js'));
+
+const routerErr = require(path.join(__dirname, 'routes/router-err.js'));
 const { PORT = 3000 } = process.env;
-
-
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/users', router_users);
-app.use('/users/:id', router_user_id);
-app.use('/cards', router_cards);
-app.use(router_err);
+
+app.use('/', routerUserId);
+app.use('/users', routerUsers);
+app.use('/cards', routerCards);
+app.use(routerErr);
 
 app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`)
-})
+  // console.log(`App listening on port ${PORT}`);
+});
 
-
-
-console.log("Запустили сервер");
+// console.log('Запустили сервер');

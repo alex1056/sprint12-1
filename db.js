@@ -3,58 +3,58 @@ module.exports = {
     { name: 'Мария', age: 22 },
     { name: 'Виктор', age: 30 },
     { name: 'Анастасия', age: 48 },
-    { name: 'Алексей', age: 51 }
+    { name: 'Алексей', age: 51 },
   ],
   cards: [
     {
       name: 'Архыз',
       link:
-        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
     },
     {
       name: 'Челябинская область',
       link:
-        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg',
     },
     {
       name: 'Иваново',
       link:
-        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg',
     },
     {
       name: 'Камчатка',
       link:
-        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg',
     },
     {
       name: 'Холмогорский район',
       link:
-        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg',
     },
     {
       name: 'Байкал',
       link:
-        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg',
     },
     {
       name: 'Нургуш',
       link:
-        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/khrebet-nurgush.jpg'
+        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/khrebet-nurgush.jpg',
     },
     {
       name: 'Тулиновка',
       link:
-        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/tulinovka.jpg'
+        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/tulinovka.jpg',
     },
     {
       name: 'Остров Желтухина',
       link:
-        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/zheltukhin-island.jpg'
+        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/zheltukhin-island.jpg',
     },
     {
       name: 'Владивосток',
       link:
-        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/vladivostok.jpg'
-    }
-  ]
+        'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/vladivostok.jpg',
+    },
+  ],
 };
