@@ -9,8 +9,6 @@
 - **GET localhost:3000/users/8340d0ec33270a25f2413b69**
 - **Wrong URLs return status 404**
 
-## https://alex1056.github.io/sprint11-1/
-
 ## Installation:
 
 ### Dependencies:
