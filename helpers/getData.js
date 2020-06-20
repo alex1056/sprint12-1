@@ -1,5 +1,3 @@
-/* eslint-disable import/no-dynamic-require */
-/* eslint-disable no-underscore-dangle */
 const path = require('path');
 
 const { readFile } = require(path.join(__dirname, 'read-file.js'));

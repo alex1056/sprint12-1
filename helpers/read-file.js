@@ -8,8 +8,7 @@ async function readFile(pathToFile) {
     const objData = await JSON.parse(stringData);
     return objData;
   } catch (error) {
-    console.log(error);
-    return error;
+    throw new Error(error);
   }
 }
 module.exports = {

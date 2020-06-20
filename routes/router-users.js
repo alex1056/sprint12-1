@@ -1,5 +1,6 @@
 const routerUsers = require('express').Router();
-const { fetchUsers } = require('../helpers/getData');
+
+const { fetchUsers, fetchUserById } = require('../helpers/getData');
 
 const url = './data/users.json';
 
@@ -7,8 +8,23 @@ const url = './data/users.json';
 //   console.log('Вызвали рутер router_users');
 //   next();
 // });
+routerUsers.get('/users/:id', (req, res) => {
+  fetchUserById(url, req.params.id)
+    .then((user) => {
+      const { message } = user;
+      if (message) {
+        res.status(404).send(user);
+        // console.log(message);
+        return;
+      }
+      res.send(user);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+});
 
-routerUsers.get('/', (req, res) => {
+routerUsers.get('/users', (req, res) => {
   fetchUsers(url)
     .then((users) => {
       res.send(users);

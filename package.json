@@ -1,7 +1,7 @@
 {
   "name": "sprint12",
   "version": "1.0.0",
-  "description": "",
+  "description": "API server implementation using Express framework",
   "main": "app.js",
   "scripts": {
     "start": "node app",

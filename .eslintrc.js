@@ -9,5 +9,9 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    'no-console': 'off',
+    'import/no-dynamic-require': 'off',
+    'no-underscore-dangle': [2, { allow: ['foo_', '_id'] }],
+  },
 };
